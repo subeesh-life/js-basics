@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring Object</title>
+</head>
+
+<body>
+  <script>
+    //Destructuring Object
+    const person = {
+      name: 'John',
+      age: 30,
+      occupation: 'Developer',
+      address: {
+        street: '123 Main St',
+        city: 'New York',
+        state: 'NY',
+        zip: '10001'
+      }
+    }
+
+    // const name = person.name;
+    // const age = person.age;
+    // const occupation = person.occupation;
+
+    // console.log(name);
+    // console.log(age);
+    // console.log(occupation);
+
+    //Destructuring
+    const x = {name, age, occupation} = person;
+
+    console.log(name);
+    console.log(age);
+    console.log(occupation);
+
+    console.log(x.name);
+
+    //Destructuring Nesting
+    const {address: {street, city, state, zip}} = person;
+
+    console.log(street);
+    console.log(city);
+    console.log(state);
+    console.log(zip);
+  </script>
+</body>
+
+</html>

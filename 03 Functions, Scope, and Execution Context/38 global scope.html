@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Scope</title>
+</head>
+
+<body>
+  <script>
+    // Global scope
+    // Global variables are variables that are available everywhere in the code
+    // Global variables are declared outside of any function
+    // Global variables are accessible everywhere in the code
+    // Global variables are declared with the var keyword
+    // Global variables are not block scoped
+    // Global variables are hoisted to the top of the code
+    // Global variables are not limited to the function scope
+    // Global variables can be accessed before they are declared
+    // Global variables can be redeclared
+    // Global variables can be reassigned
+    // Global variables are not constant
+    // Global variables are not scoped to the function scope
+    // Global variables are not scoped to the block scope
+    // Global variables are not scoped to the switch scope
+    // Global variables are not scoped to the with scope
+    // Global variables are not scoped to the for scope
+    // Global variables are not scoped to the for in scope
+    // Global variables are not scoped to the for of scope
+    // Global variables are not scoped to the label scope
+    // Global variables are not scoped to the try scope
+    // Global variables are not scoped to the catch scope
+
+
+    //************************************************
+
+    window.alert('Global Scope');
+    //conosle.log(window.innerWidth);
+
+    //************************************************
+
+    const x = 100;
+    console.log(x, "is a global variable")
+
+    //************************************************
+
+    function run() {
+      console.log(x, "is a global variable, invoking from function")
+    }
+    run()
+
+    //************************************************
+
+    if (true) {
+      console.log(x, "is a global variable, loging by boolean")
+    }
+
+
+  </script>
+</body>
+
+</html>

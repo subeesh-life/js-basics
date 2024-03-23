@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Constructor</title>
+</head>
+
+<body>
+  <script>
+    const todo = new Object(); 
+    todo.title = "Buy groceries";
+    todo.description = "Milk, bread, eggs";
+    todo.dueDate = "2023-06-30";
+    todo.isCompleted = false;
+    todo.priority = "High";
+    todo.assignee = "John Doe";
+    todo.tags = ["shopping", "home improvement"];
+    todo.getDetails = function () {
+      return (`Title: ${this.title}, Description: ${this.description}, Due Date: ${this.dueDate}, Priority: ${this.priority}, Assignee: ${this.assignee}, Tags: ${this.tags.join(", ")}`);
+    }
+    console.log(todo.getDetails());
+  </script>
+</body>
+
+</html>

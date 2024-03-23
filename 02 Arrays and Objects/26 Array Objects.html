@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Objects</title>
+</head>
+
+<body>
+  <script>
+    const todos = [
+      {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true,
+      },
+      {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true,
+      },
+      {
+        id: 3,
+        text: 'Dentist appt',
+        isCompleted: false,
+      }
+    ]
+    console.log(todos[1].text); // Meeting with boss
+
+
+    //************************************************
+
+    let person = {
+      name: 'John',
+      age: 30,
+      occupation: 'Developer'
+    }
+
+    let x = Object.keys(person) // ['name', 'age', 'occupation']
+
+    x = Object.values(person) // ['John', 30, 'Developer']
+
+    x = Object.entries(person) // [['name', 'John'], ['age', 30], ['occupation', 'Developer']]
+
+    x = Object.keys(person).length // 3
+
+    x = Object.hasOwnProperty('name') // true
+
+    //************************************************
+
+    console.log(x);
+
+
+  </script>
+</body>
+
+</html>

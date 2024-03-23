@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Scope</title>
+</head>
+
+<body>
+  <script>
+    if (true) {
+      const a = 500; //Block Scope
+      let b = 600; // Block Scope
+      var c = 700; // Global Scope
+    }
+
+    console.log(a); // ReffereceError: a is not defined
+    console.log(b); //ReffereceError: b is not defined
+    console.log(c); // 700
+  </script>
+</body>
+
+</html>

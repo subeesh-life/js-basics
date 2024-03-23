@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Scope</title>
+</head>
+
+<body>
+  <script>
+    function first() {
+      const x = 100;
+
+      function second() {
+        const y = 200;
+        console.log(x + y)
+      }
+      second()
+    }
+    first()
+  </script>
+</body>
+
+</html>

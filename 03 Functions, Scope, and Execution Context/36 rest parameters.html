@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function nums(...rest) {
+      return (rest);
+    }
+    console.log(nums(1, 2, 3, 4)) //
+
+    //************************************************
+    function sum(...nums) {
+      let total = 0;
+      for (let num of nums) {
+        total += num;
+      }
+      return total;
+    }
+    
+    console.log(sum(5, 8, 7, 4))
+
+  </script>
+</body>
+
+</html>

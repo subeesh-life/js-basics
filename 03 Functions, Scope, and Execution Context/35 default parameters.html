@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Old way if the user in not defined in the argument
+    function regUser2(user) {
+      if (!user) {
+        user = "Bot"
+      }
+      return user + ' is a registered user';
+    }
+    console.log(regUser2())
+
+    //************************************************
+    //Old way if the user in not defined in the argument
+    function regUser3(user = "Bot") {
+      return user + ' is a registered user';
+    }
+    console.log(regUser3())
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Constructor</title>
+</head>
+
+<body>
+  <script>
+    let arr = new Array(1, 2, 3);
+    let fruits = new Array("Apple", "Banana", "Orange");
+    console.log(arr);
+    console.log(typeof arr);
+    console.log(arr.toString());
+    console.log(arr.length);
+    console.log(arr.constructor);
+    console.log(arr.constructor === Array);
+    console.log(Array.isArray(arr));
+    console.log(Array.isArray(arr.constructor));
+    console.log(Array.isArray(arr.constructor === Array));
+    console.log(Array.isArray(arr.constructor === Array.prototype));
+    console.log(Array.isArray(arr.constructor === Array.prototype.constructor));
+
+    console.log(`My favourite fruit is an ${fruits[0]} `)
+
+    let addLast = fruits[fruits.length] = "Blueberry";
+    fruits.push("Pineapple"); //same as addLast
+    console.log(addLast);
+    console.log(fruits)
+
+  </script>
+</body>
+
+</html>

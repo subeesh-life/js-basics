@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator In Object</title>
+</head>
+
+<body>
+  <script>
+    //First Object
+    let person = {
+      name: 'John',
+      age: 30,
+      occupation: 'Developer'
+    }
+    //Second Object
+    let currentStatus = {
+      isMarried: true,
+      nationality: "india",
+      numKids: 2
+    }
+
+    //spread operator   Best and Modern Way to use
+    let details = {...person, ...currentStatus}
+    console.log(details)
+
+    //Another way by using assign object method ()
+    let details2 = Object.assign({}, person, currentStatus)
+    console.log(details2)
+  </script>
+
+</body>
+
+</html>

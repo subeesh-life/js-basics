@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Literals</title>
+</head>
+
+<body>
+  <script>
+    // Object Literal
+    const person = {
+      name: 'John',
+      age: 30,
+      occupation: 'Developer'
+    };
+
+    // Accessing object properties
+    console.log(person.name); // Output: John
+    console.log(person.age); // Output: 30
+    console.log(person.occupation); // Output: Developer
+
+    // Modifying object properties
+    person.age = 31;
+    person.occupation = 'Designer';
+
+    // Adding new properties
+    person.city = 'New York';
+
+    // Deleting properties
+    delete person.occupation;
+
+    // Iterating over object properties
+    for (const key in person) {
+      console.log(`${key}: ${person[key]}`);
+    }
+
+    // Checking property existence
+    console.log('name' in person); // Output: true
+    console.log('email' in person); // Output: false
+    console.log(person.age = true) // Output: true
+
+    person.welcome = function () {
+      return (`Welcome, ${this.name}!`);
+    }
+    console.log(person.welcome());
+    // Object.keys()
+    console.log(Object.keys(person)); // Output: ['name', 'age', 'city']
+
+    // Object.values()
+    console.log(Object.values(person));
+  </script>
+</body>
+
+</html>

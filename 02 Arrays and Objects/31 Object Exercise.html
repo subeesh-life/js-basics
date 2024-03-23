@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Exercise</title>
+</head>
+
+<body>
+  <script>
+    //Create an array of objects called library. Add  3 object with a property called title, author, status. Title and author should be strings and status should be another object with the property of own, reading and read. Whihc should all be boolean values. For all status, set own to true and reading and read to false
+
+    const library = {
+      title: 'The Great Gatsby',
+      author: 'F. Scott Fitzgerald',
+      status: {
+        own: true,
+        reading: false,
+        read: false
+      }
+    }
+
+    //You finshed reading all of the books. set the read value for all of them to true. Do not      edit the initial object. Set the value using dot notation.
+    library.status.read = true;
+    console.log(library.status.read)
+
+    //Destructure the title from the book and rename the variable to firstBook
+    const {title: firstBook} = library
+    console.log(firstBook);
+
+    //Turn the library inot a JSON string
+
+    const stringify = JSON.stringify(library);
+    console.log(stringify)
+
+  </script>
+</body>
+
+</html>

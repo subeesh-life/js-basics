@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strings</title>
+</head>
+
+<body>
+  <h1>Working with strings</h1>
+  <script>
+    const name = "Subeesh";
+    const age = 33;
+
+    //Concatinate
+    const aboutMe = "My name is " + name + " and I am " + age + " years old.";
+    console.log(aboutMe);
+    //Template Literals
+    const aboutMe2 = `My name is ${name} and I am ${age} years old.`;
+    console.log(aboutMe2)
+
+    //String Properties and Methods
+    const greeting = "Hello World";
+    console.log(typeof (greeting))
+
+    //Changing to Object
+    const greeting2 = new String("Hello World");
+    console.log(typeof (greeting2))
+
+    //Checking the character length
+    const l = greeting.length
+    console.log(l)
+
+    //Accessing the first character
+    const firstLetter = greeting[0];
+    console.log(firstLetter)
+
+    //Prototype
+    const prototype = greeting2.__proto__;
+    console.log(prototype);
+
+    //Converting to Uppercase
+    let result = greeting.toUpperCase();
+
+    //Converting to Lowercase
+    result = greeting.toLowerCase();
+
+    //charAt
+    result = greeting.charAt(0);
+
+    //Slicing the string
+    result = greeting.slice(0, 5);
+
+    //Replacing the string
+    result = greeting.replace("Hello", "Subeesh");
+
+    //IndexOf
+    result = greeting.indexOf("World");
+
+    //LastIndexOf
+    result = greeting.lastIndexOf("d");
+
+    //substring
+    result = greeting.substring(0, 5);
+
+    //Trim (Removing the white space)
+    const greeting3 = "   Hello World   ";
+    result = greeting3.trim();
+    //console.log(result);
+
+    //Split
+    const greeting4 = "Hello World";
+    result = greeting4.split(" ");
+    //console.log(result);
+
+    //Split with RegEx
+    const greeting5 = "Hello World";
+    result = greeting5.split(/[ ]+/);
+    //console.log(result);
+
+    //Includes
+    const greeting6 = "Hello World";
+    result = greeting6.includes("World");
+    //console.log(result);
+
+    //valueOf
+    const greeting7 = "Hello World";
+    result = greeting7.valueOf();
+    console.log(result);
+
+  </script>
+</body>
+
+</html>
