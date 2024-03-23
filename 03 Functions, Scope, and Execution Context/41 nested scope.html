@@ -10,6 +10,9 @@
 
 <body>
   <script>
+
+    //************************************************
+    //Function Nested Scope
     function first() {
       const x = 100;
 
@@ -19,7 +22,18 @@
       }
       second()
     }
-    first()
+    first() // 300
+
+
+    //************************************************
+    //Condition Nested Scope
+    if (true) {
+      const x = 100;
+      if (x === 100) {
+        const y = 200;
+        console.log(x + y)
+      }
+    }
   </script>
 </body>
 
