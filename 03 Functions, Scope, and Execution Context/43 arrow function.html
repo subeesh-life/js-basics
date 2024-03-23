@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Functions</title>
+</head>
+
+<body>
+  <ul>
+    <li>Introduced in 2015</li>
+    <li>More Compact, Implicit return, Lexical Scope</li>
+  </ul>
+  <script>
+
+    // Regular Function
+    function add(x, y) {
+      return x + y;
+    }
+    console.log(add(5, 10));
+
+    //***********************************************
+    // Arrow Function
+    const addArrow = (x, y) => {
+      return x + y;
+    }
+    console.log(addArrow(15, 10));
+
+    //***********************************************
+    //More Simpler Arrow Function -  Implicit Return
+    const addArrow2 = (x, y) => x + y;
+    console.log(addArrow2(20, 25))
+
+    //***********************************************
+    //If only one parameter, we can make it shorter agian
+    const double = x => x * 2;
+    console.log(double(10));
+
+    //***********************************************
+    //Returning an object
+    const person = () => ({
+      name: 'John',
+      age: 30
+    })
+    console.log(person())
+
+    //***********************************************
+    //Using ForEach to loop 
+    const numbers = [1, 2, 3, 4, 5];
+    // numbers.forEach(function (n) {
+    //   console.log(n)
+    // })
+    numbers.forEach((n) => console.log(n)) // Short
+
+
+  </script>
+</body>
+
+</html>
