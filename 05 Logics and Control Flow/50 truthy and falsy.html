@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truthy and Falsy</title>
+</head>
+
+<body>
+  <script>
+    //************************************************
+    //Truthy Values
+    //************************************************
+    // true
+    // '0' (0 is a string)
+    // ' ' (space in a string)
+    // 'false' (false in a string)
+    // [] (empty array)
+    // {} (empty object)
+    // function () {} (empty function)
+    //************************************************
+
+
+    const email = "user@email.com";
+
+    if (email) {
+      console.log(email);
+    }
+
+    console.log(Boolean(email))
+
+    //************************************************
+    //Falsy Values
+    //************************************************
+    //Falsy Values are values that are considered false when evaluated in a boolean context
+    //false
+    //null
+    //undefined
+    //0
+    //NaN
+    //""
+    //null
+    //Everything else is truthy
+
+
+    const firstName = "";
+    const lastName = "Doe";
+
+    if (firstName || lastName) {
+      console.log(firstName, lastName); //Doe
+    }
+
+    //************************************************
+    //Ternary Operator
+    //Ternary Operator is a shorthand way to write if else statements
+    //Ternary Operator is an expression
+    //Ternary Operator is a conditional operator
+    //Ternary Operator is an assignment operator
+    //Ternary Operator is an operator
+    //Ternary Operator is an unary operator
+
+    //For Ternary Example:
+    //************************************************
+    //Condition ? Expression1 : Expression2
+    //Condition is the condition to be evaluated
+    //Expression1 is the expression to be executed if the condition is true
+    //Expression2 is the expression to be executed if the condition is false
+    const age = 18;
+    const isAdult = age >= 18 ? "Adult" : "Minor";
+    console.log(isAdult); //Adult
+    //************************************************
+
+
+  </script>
+</body>
+
+</html>
