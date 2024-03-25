@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIFEE</title>
+</head>
+
+<body>
+  <h1>Immediately Invoked Function Expression</h1>
+  
+  <script>
+    (function () {
+      const user = "Subeesh";
+      console.log(user); // Subeesh
+
+      const hello = () => console.log('Hello from the IIFE');
+      hello(); // Hello from the IIFE
+      //Invoking a function from inside the codeblock is called recursing.
+    })()
+
+      //Adding the parameter
+      (function (name) {
+        console.log("Hello from " + name)
+      })('Subeesh');
+  </script>
+</body>
+
+</html>
