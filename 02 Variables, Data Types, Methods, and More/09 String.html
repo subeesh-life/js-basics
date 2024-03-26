@@ -16,39 +16,39 @@
 
     //Concatinate
     const aboutMe = "My name is " + name + " and I am " + age + " years old.";
-    console.log(aboutMe);
+    console.log(aboutMe); // My name is Subeesh and I am 33 years old.
     //Template Literals
     const aboutMe2 = `My name is ${name} and I am ${age} years old.`;
-    console.log(aboutMe2)
+    console.log(aboutMe2) // My name is Subeesh and I am 33 years old.
 
     //String Properties and Methods
     const greeting = "Hello World";
-    console.log(typeof (greeting))
+    console.log(typeof (greeting)) // string
 
     //Changing to Object
     const greeting2 = new String("Hello World");
-    console.log(typeof (greeting2))
+    console.log(typeof (greeting2)) // object
 
     //Checking the character length
-    const l = greeting.length
-    console.log(l)
+    const totalLength = greeting.length
+    console.log(totalLength) // 11
 
     //Accessing the first character
     const firstLetter = greeting[0];
-    console.log(firstLetter)
+    console.log(firstLetter) // H
 
     //Prototype
     const prototype = greeting2.__proto__;
-    console.log(prototype);
+    console.log(prototype); 
 
     //Converting to Uppercase
-    let result = greeting.toUpperCase();
+    let result = greeting.toUpperCase(); // HELLO WORLD
 
     //Converting to Lowercase
-    result = greeting.toLowerCase();
+    result = greeting.toLowerCase(); // hello world
 
     //charAt
-    result = greeting.charAt(0);
+    result = greeting.charAt(0); // H
 
     //Slicing the string
     result = greeting.slice(0, 5); //Hello
@@ -67,7 +67,7 @@
 
     //Trim (Removing the white space)
     const greeting3 = "   Hello World   ";
-    result = greeting3.trim();
+    result = greeting3.trim(); //Hello World (Removing the white space)
     //console.log(result);
 
     //Split
@@ -77,8 +77,8 @@
 
     //Split with RegEx
     const greeting5 = "Hello World";
-    result = greeting5.split(/[ ]+/);
-    //console.log(result);
+    result = greeting5.split(/[ ]+/); //["Hello", "World"]
+    //console.log(result); 
 
     //Includes
     const greeting6 = "Hello World";
