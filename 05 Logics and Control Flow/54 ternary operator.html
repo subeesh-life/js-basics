@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ternary Operator</title>
+</head>
+
+<body>
+  <script>
+    // Ternary Operator = It is a short hand method of if else statement.
+    // Syntax = condition ? true : false;
+    // Example = a > b ? "a is greater than b" : "b is greater than a";
+
+    // Example One
+    let a = 10;
+    let b = 20;
+    let c = a > b ? "a is greater than b" : "b is greater than a";
+    console.log(c);
+
+    // Example Two
+    let d = 10;
+    let e = 20;
+    let f = d > e ? "d is greater than e" : "e is greater than d";
+    console.log(f);
+
+    //Example thee
+    const age = 20;
+    age >= 18 ? console.log("You are eligible to vote") : console.log("You are not eligible to vote")
+
+    //Assigning a conditional value to a variable
+    const canVote = age > 18 ? 'You can vote' : 'You cannot vote';
+    console.log(canVote)
+
+    //Multiple Conditional Statements
+    const auth = true;
+
+    const redirect = auth ?
+      (alert('Welcome to the dashboard'), '/dashboard') :
+      (alert('Access Denied'), '/login');
+
+    console.log(redirect)
+
+    //If no else statement
+    auth ? console.log('Welcome to the dashboard') : null;
+    //or
+    auth && console.log('Welcome to the dashboard');
+  </script>
+</body>
+
+</html>

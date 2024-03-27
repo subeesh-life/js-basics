@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operator</title>
+</head>
+
+<body>
+  <script>
+    // Logical Operator
+    // && (AND)
+    // || (OR)
+    // ! (NOT)
+
+    // AND
+    // true && true = true
+    // true && false = false
+    // false && true = false
+    // false && false = false
+
+    // OR  = Will reutn the first true value or the last value
+    // true || true = true
+    // true || false = true
+    // false || true = true
+    // false || false = false
+
+    // NOT
+    // !true = false
+    // !false = true
+
+    //Nullish = Return the right side operand when the left side operand is null or undefined.
+    // ??
+
+
+    // Example
+    let age = 22;
+    let isStudent = true;
+    if (age >= 18 && isStudent) {
+      console.log("You are an adult student.");
+    } else {
+      console.log("You are not an adult student.");
+    }
+
+    //Example Two
+    let isRaining = false;
+    let hasUmbrella = true;
+    if (isRaining && hasUmbrella) {
+      console.log("You can go outside.");
+    } else {
+      console.log("You cannot go outside.");
+    }
+
+    //Example Three
+    const posts = ['Post One', 'Post Two'];
+    posts.length > 0 && console.log('There are posts.');
+
+    //Example Four
+    //Will return the first true value or the last value
+    let b, c, d;
+    b = 10 || 20;
+    console.log(b);
+    c = 0 || 20;
+    console.log(c);
+    d = 0 || undefined;
+    console.log(d)
+
+    //Nullish Example
+    //Return the right side operand when the left side operand is null or undefined. 
+    let value;
+    value = null ?? 'default value';
+    console.log(value)
+
+  </script>
+
+</body>
+
+</html>
