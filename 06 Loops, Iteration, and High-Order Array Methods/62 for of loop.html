@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For of Loop</title>
+</head>
+
+<body>
+  <script>
+    const items = ['books', 'table', 'chair', 'kite'];
+    //For Loop
+    for (let i = 0; i < items.length; i++) {
+      console.log(items[i])
+    };
+
+    const categories = ['fruits', 'meat', 'vegitables', 'bakery'];
+    //For of Loop
+    for (const categorie of categories) {
+      console.log(categorie)
+    }
+
+    //Loop in Object
+    const users = [
+      {name: "subeesh"},
+      {name: 'sudheesh'},
+      {name: "sujeesh"}
+    ]
+
+    for (const user of users) {
+      console.log(user)
+      console.log(user.name)
+    }
+
+    //Loop over String
+    const str = "Hello World";
+    for (const char of str) {
+      console.log(char)
+    };
+
+    //Loop over Map
+    const map = new Map();
+    map.set('name', 'subeesh');
+    map.set('age', '20');
+    map.set('gender', 'male');
+    for (const [key, value] of map) {
+      console.log(key, value)
+    }
+  </script>
+</body>
+
+</html>

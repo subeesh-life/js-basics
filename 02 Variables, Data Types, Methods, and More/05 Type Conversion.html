@@ -15,20 +15,25 @@
     //Change string to number
     // newAmount = Number(amount);
     //newAmount = parseInt(amount);
-    amount = +amount;
+    newAmount = +amount;
+    console.log(newAmount); // 5
+    console.log(typeof (newAmount)) // number
 
     //Change number to string
     //newAmount = amount.toString();
-    amount = String(amount);
+    newAmount = String(amount);
+    console.log(newAmount); // 5
+    console.log(typeof (newAmount)) // string
 
     //Change string to decimal
-      newAmount = parseFloat(amount);
+    newAmount = parseFloat(amount);
+    console.log(newAmount); // 5
+    console.log(typeof (newAmount)) //
+
 
     //convert number to boolean
-      newAmount = Boolean(amount);
-
-
-    console.log(newAmount, typeof newAmount)
+    newAmount = Boolean(amount);
+    console.log(newAmount, typeof newAmount) // true number
 
 
     console.log(Math.sqrt(-1)); //NaN

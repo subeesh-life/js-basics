@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>While Loop</title>
+</head>
+
+<body>
+  <script>
+    let i = 0;
+    while (i <= 10) {
+      console.log(i);
+      i++
+    }
+
+    //Loop over array
+    const fruits = [
+      'apple',
+      'banana',
+      'orange',
+      'grape',
+      'pear',
+      'kiwi',
+    ]
+
+    let j = 0
+    while (j < fruits.length) {
+      console.log(fruits[j]);
+      j++
+    }
+
+    //nested while loop
+    let k = 0;
+    while (k <= 5) {
+      console.log('outer loop', k);
+      let m = 0;
+      while (m <= 3) {
+        console.log('inner loop', m);
+        m++;
+      }
+      k++;
+    }
+  </script>
+</body>
+
+</html>

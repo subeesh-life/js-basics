@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For In Loop</title>
+</head>
+<script>
+
+  //In Object
+  const colorObj = {
+    color1: 'red',
+    color2: 'blue',
+    color3: 'Orange',
+    color4: 'green'
+  }
+  for (const key in colorObj) {
+    console.log(key, colorObj[key])
+  }
+
+  // In Array
+  const colors = ['red', 'blue', 'orange', 'green'];
+  for (const color in colors) {
+    console.log(color)
+  }
+
+  for (const key in colors) {
+    console.log(colors[key])
+  }
+</script>
+
+<body>
+
+</body>
+
+</html>
