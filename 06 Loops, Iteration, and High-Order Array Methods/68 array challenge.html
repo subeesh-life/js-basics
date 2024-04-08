@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Take the people array and create an array called yound people that store objects with only name and email properties of all the people that are 25 and under. tha name property should have thier first and last name.
+    const people = [
+      {
+        firstName: "Alice",
+        lastName: "Smith",
+        age: 25,
+        email: "oqibz@example.com"
+      },
+      {
+        firstName: "Bob",
+        lastName: "Jones",
+        age: 30,
+        email: "xcvkp@example.com"
+      },
+      {
+        firstName: "Charlie",
+        lastName: "Brown",
+        age: 20,
+        email: "oqibz@example.com"
+      },
+      {
+        firstName: "David",
+        lastName: "Lee",
+        age: 35,
+        email: "mynbi@example.com"
+      }
+    ]
+    const youndPeople = people.filter( (person) => person.age <= 25).map((person) => ({
+      name: `${person.firstName} ${person.lastName}`,
+      age: person.age
+    }))
+    console.log(youndPeople);
+  </script>
+</body>
+
+</html>
