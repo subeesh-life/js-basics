@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Element</title>
+</head>
+
+<body>
+  <div>
+    <ul>
+      <li>Hello</li>
+      <li>World</li>
+    </ul>
+  </div>
+  <script>
+    const listItems = document.querySelectorAll('li');
+    console.log(listItems)
+    console.log(listItems[1].innerText)
+    listItems[1].innerText = "Subeesh"
+    console.log(listItems[1].innerText)
+    listItems[1].style.color = 'red'
+
+    //forEach
+    listItems.forEach((item, index) => {
+      item.style.color = 'red'
+    });
+    console.log(listItems)
+
+    //Remove item
+    if (index === 1) {
+      item.remove();
+    }
+
+    //innerText
+    if (index === 0) {
+      item.innerText = "Orange"
+    }
+    console.log(item)
+
+    //InnerHTML
+    if (index === 0) {
+      item.innerHTML = `Oranges are <strong>Tasty </strong>`
+    }
+
+    //getElementByClassName
+    const classItems = document.getElementByClassName('item');
+    conosle.log(classItems)
+    console.log(classItems[0].innerText)
+
+    //getElementByTagName
+    const tagItems = document.getElementByTagName('li');
+    console.log(tagItems)
+  </script>
+</body>
+
+</html>
