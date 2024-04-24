@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Objects</title>
+</head>
+
+<body>
+  <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2022/08/29150553/Google-Workspace.png"
+    style="width: 300px; height: auto;" />
+  <script>
+    // target = element that triggered the event
+    // currentTarget = element that handled the event
+    // type = type of event
+    // timeStamp = time when event was triggered
+    // clientX = x poistion of the mouse click relative to the window
+    // clientY = y position of the mouse click relative to the window
+    // offsetX = x position of the mouse click relative to the element
+    // offsetY = y position of the mouse click relative to the element
+    // pageX = x position of the mouse click relative to the page
+    // pageY = y position of the mouse click relative to the page
+    // screenX = x position of the mouse click relative to the screen
+    // screenY = y position of the mouse click relative to the screen
+    // ctrlKey = true if the ctrl key is pressed
+    // shiftKey = true if the shift key is pressed
+    // altKey = true if the alt key is pressed
+    // metaKey = true if the meta key is pressed
+
+    const img = document.querySelector('img')
+
+    //Functions
+    const onClick = (event) => {
+      console.log(event.target)
+      console.log(event.currentTarget)
+
+    }
+
+    //Event Listner
+    img.addEventListener('click', onClick)
+
+
+
+  </script>
+</body>
+
+</html>
